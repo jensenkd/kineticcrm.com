@@ -1,1 +1,371 @@
-TEST
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Kinetic CRM - Web Based Contact Relationship Management Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web based Sales and Contact Relationship Management software" />
+    <meta name="author" content="Kevin Jensen" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="css/iconfont.css" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,400italic,500italic" rel="stylesheet" type="text/css" /> <!-- Google Web Fonts - Roboto -->
+    <link href="css/animate.min.css" rel="stylesheet" /> <!-- Animated CSS -->
+    <link href="css/flexslider.css" rel="stylesheet" /> <!-- Flexslider CSS -->
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" /> <!-- PrettyPhoto CSS -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="img/ico/favicon.png" />
+</head>
+
+<body ng-app="app">
+    <div id="home" class="main-container">
+        <section id="top-nav">
+            <div class="katemi-nav navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="img-responsive" /></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav nav-pills pull-right navbar-nav">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#marketing">Overview</a></li>
+                            <!--<li><a href="#featurettes">Features</a></li>
+                            <li><a href="#annotations">Product Tour</a></li>-->
+                            <li><a href="#contactModal" class="unscroll" data-toggle="modal">FREE Signup</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Head Banner Section -->
+        <section id="head-banner" class="dark-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="tagline centered normal">Welcome to <span class="bolder">Kinetic CRM</span></h1>
+                        <h3 class="centered lighter">Contact Relationship Management Software</h3>
+                    </div>
+                    <div class="col-md-12 head-cta">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+                                <a href="#contactModal" class="medium-btn btn-default green-btn btn-default" data-toggle="modal">Signup for FREE Account in 30 Seconds</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 product-teaser">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 left-desc">
+                                <p class="product-teaser-title">CRM in the Cloud</p>
+                                <p class="product-teaser-desc">
+                                    Access to your pipeline anytime, anywhere you want. Whether you're vacationing in Mexico, or you just finished brokering a deal with a client in Hong Kong,
+                                    Kinetic CRM is always there for you.
+                                </p>
+                            </div> <!--/ .left-desc -->
+                            <div class="col-md-6 col-sm-6">
+                                <img class="center-image img-responsive" src="img/big-ss2.png" alt="product-teaser" />
+                            </div>
+                            <div class="col-md-3 col-sm-3 right-desc">
+                                <p class="product-teaser-title">Desktop, Mobile or Tablet</p>
+                                <p class="product-teaser-desc">Kinetic CRM allows your entire salesforce to manage your clients with any device they choose.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Section -->
+        <section id="marketing" style="margin-top: 60px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 centered section-title-wrapper">
+                        <h3 class="section-title">What can Kinetic CRM do for your business?</h3>
+                        <p class="section-subtitle"></p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 marketing-content centered">
+                        <span class="glyphicon glyphicon-link marketing-icon"></span>
+                        <h5>World Class Security</h5>
+                        <p>Your software and data will be housed in the largest, most secure data centers in the world.</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 marketing-content centered">
+                        <span class="glyphicon glyphicon-heart-empty marketing-icon"></span>
+                        <h5>We love our awesome customers!</h5>
+                        <p>We are building software for YOU and we are adding customer suggested features to our products every day.</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 marketing-content centered">
+                        <span class="glyphicon glyphicon-cog marketing-icon"></span>
+                        <h5>Easy to Customize</h5>
+                        <p>You have the ability to customize the application and tailor the fields, process to your business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="content-hr" />
+                </div>
+            </div>
+        </div>
+
+        <section id="featurettes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 centered section-title-wrapper">
+                        <h3 class="section-title">See All New <span class="normal">Katemi Features</span></h3>
+                        <p class="section-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                    <div class="col-md-6  col-sm-6 featurettes-content">
+                        <h4>Pro Support. <span class="lighter">All your problems will solved quickly with Live Chat support.</span></h4>
+                        <a href="img/teehanlax.jpg" rel="prettyPhoto[gallery]" title="You can add caption to pictures.">
+                            <span class="col-md-6 rollover"></span>
+                            <img class="center-image img-responsive" src="img/screenshot.png" alt="feature" />
+                        </a>
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.</p>
+                        <a href="#" class="large-link">Learn More</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 featurettes-content">
+                        <h4>Mobile First. <span class="lighter">Never lose your potential customer, sign them on the go.</span></h4>
+                        <div class="row featurettes-inner-section">
+                            <div class="col-md-6 col-xs-6">
+                                <div class="flexslider-featurettes">
+                                    <ul class="slides">
+                                        <li><img class="center-image" src="img/iphone-ss1.png" alt="feature" /></li>
+                                        <li><img class="center-image" src="img/iphone-ss2.png" alt="feature" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <ul class="checklist">
+                                    <li class="green-list">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</li>
+                                    <li class="green-list">Nullam quis risus eget urna leo.</li>
+                                    <li class="green-list">Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
+                                    <li class="green-list">Nullam quis risus eget urna leo.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.</p>
+                        <a href="#" class="large-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="content-hr" />
+                </div>
+            </div>
+        </div>
+
+        <section id="annotations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 centered section-title-wrapper">
+                        <h3 class="section-title">Let's Take <span class="normal">a Closer Look</span></h3>
+                    </div>
+                    <div class="col-md-12">
+                        <a class="annotation-link product-dot1" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pharetra Mattis Vestibulum Fringilla Fusce"></a>
+                        <a class="annotation-link product-dot2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."></a>	<a class="annotation-link product-dot3" href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Cras mattis consectetur purus sit amet fermentum."></a>
+                        <a class="annotation-link product-dot4" href="#" data-toggle="tooltip" data-placement="left" title="" data-original-title="Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."></a>	<a class="annotation-link product-dot5" href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."></a>
+                        <a class="annotation-link product-dot6" href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Cras mattis consectetur purus sit amet fermentum."></a>
+                        <a class="annotation-link product-dot7" href="#" data-toggle="tooltip" data-placement="left" title="" data-original-title="Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."></a>
+                        <a class="annotation-link product-dot8" href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."></a>
+                        <img class="center-image img-responsive" src="img/big-ss.png" alt="annotation" />
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="content-hr" />
+                </div>
+            </div>
+        </div>
+
+        <section id="breakline" class="dark-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-7">
+                        <h3 class="centered normal">Subscribe and be the first to know all updates and special offers!</h3>
+                    </div>
+                    <div class="col-md-5 col-sm-5" ng-controller="newsletterCtrl">
+                        <form ng-submit="subscribe(subscribeEmail)" id="subscribe_form">
+                            <input class="subscribe-input" placeholder="Enter your valid email address..." type="text" ng-model="subscribeEmail" required />
+                            <input class="subscribe-submit yellow-btn btn-default" type="submit" value="Subscribe" />
+                        </form>
+                        <div class="row">
+                            <div class="subscribe-alert" ng-show="message" ng-switch on="messageLevel">
+                                <div class="alert alert-error" ng-switch-when="error">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-fire icon-white"></i></span>
+                                    <strong>Error!</strong> {{ message }}
+                                </div>
+
+                                <div class="alert alert-success" id="subscribe_success" ng-switch-when="success">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-thumbs-up icon-white"></i></span>
+                                    <strong>Success!</strong> {{ message }}
+                                </div>
+
+                                <div class="alert" ng-switch-when="fatal">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-bullhorn icon-white"></i></span>
+                                    <strong>Sorry!</strong> {{ message }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup Modal -->
+        <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-label">Signup for Kinetic CRM</h4>
+                    </div>
+                    <div class="modal-body contact-form-container">
+                        <form name="contactForm" id="contact_form" class="form-horizontal" ng-submit="signup(user)" ng-controller="signupCntrl">
+                            <div class="row">
+                                <div class="alert alert-error form-error-message" id="name_error">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-fire icon-white"></i></span>
+                                    <strong>Error!</strong> Please enter your name.
+                                </div>
+                                <div class="alert alert-error form-error-message" id="email_error">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-fire icon-white"></i></span>
+                                    <strong>Error!</strong> Please enter your valid email address.
+                                </div>
+                                <div class="alert alert-error form-error-message" id="subject_error">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-fire icon-white"></i></span>
+                                    <strong>Error!</strong> Please enter your subject.
+                                </div>
+                                <div class="alert alert-error form-error-message" id="message_error">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-fire icon-white"></i></span>
+                                    <strong>Error!</strong> Please enter your message.
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">First Name</label>
+                                <input class="form-control" ng-model="user.firstName" type="text" required />
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Last Name</label>
+                                <input class="form-control" ng-model="user.lastName" type="text" required />
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Email</label>
+                                <input class="form-control" ng-model="user.userName" type="text" required />
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Company Name</label>
+                                <input class="form-control" ng-model="user.companyName" type="text" />
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Password</label>
+                                <input class="form-control" ng-model="user.password" type="password" required />
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Confirm Password</label>
+                                <input class="form-control" ng-model="user.confirmPassword" type="password" required />
+                            </div>
+                            <div class="control-group">
+                                <label>Timezone</label>
+                                <select ng-model="user.timezone" ng-options="timezone.name for timezone in timezones" class="form-control" required></select>
+                            </div>
+                            <div class="row">
+                                <div class="alert form-error-message" id="mail_fail">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <span class="alert-icon"><i class="glyphicon glyphicon-bullhorn icon-white"></i></span>
+                                    <strong>Sorry!</strong> An error occured signing you up.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" class="send-button green-btn btn-default" value="Submit" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <p class="copyright">
+                            © 2014 Kinetic Media Technologies, Inc. All rights reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="social pull-right">
+                            <li><a href="http://www.facebook.com/pages/Kinetic-CRM/159511234106202"><span aria-hidden="true" class="icon-facebook"></span></a></li>
+                            <li><a href="http://twitter.com/kineticcrm"><span aria-hidden="true" class="icon-twitter"></span></a></li>
+                            <li><a href="http://www.linkedin.com/company/2071188"><span aria-hidden="true" class="icon-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/hopscotch-0.1.2.min.js"></script>
+    <script type="text/javascript" src="js/katemi.js"></script>
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-22208670-2', 'kineticcrm.com');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
